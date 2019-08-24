@@ -1,0 +1,20 @@
+
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <div>
+    <h1>Your own voice </h1>
+    <hr>
+    
+        <!-- <p *ngFor='let quote of quotes'>
+          {{quote.name}}
+          <app-quotedetails [quote]='quote'></app-quotedetails>
+        </p> -->
+        <div *ngFor='let quote of quotes;let i = index'>
+            <li>{{quote.name}}</li>
+            <button (click)='toggleDetails(i)'>Toggle Details</button>
+            <app-quotedetails *ngIf='quote.showDescription' [quote]='quote'></app-quotedetails>
+          </div>
+  </div>
+  </div>
