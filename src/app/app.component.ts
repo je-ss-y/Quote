@@ -9,8 +9,8 @@ import { Quotelines } from './quotelines';
 export class AppComponent {
   title = 'Quoted';
   quotes:Quotelines [] = [
-    new Quotelines(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son'),
-    new Quotelines(2,'Buy Cookies','I have to buy cookies for the parrot'),
+    new Quotelines(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son',new Date(2019,3,14)),
+    new Quotelines(2,'Buy Cookies','I have to buy cookies for the parrot',new Date(2019,3,14)),
 
   ]
 

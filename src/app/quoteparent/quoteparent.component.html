@@ -12,9 +12,11 @@
           <app-quotedetails [quote]='quote'></app-quotedetails>
         </p> -->
         <div *ngFor='let quote of quotes;let i = index'>
-            <li>{{quote.name}}</li>
+            <li>{{quote.name}} published on {{quote.completeDate|date|uppercase}}</li>
             <button (click)='toggleDetails(i)'>Toggle Details</button>
-            <app-quotedetails *ngIf='quote.showDescription' [quote]='quote'></app-quotedetails>
+            <app-quotedetails *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quotedetails>
+         
           </div>
+          <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
   </div>
   </div>
