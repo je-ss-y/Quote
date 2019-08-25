@@ -9,6 +9,15 @@ import { Quotelines } from '../quotelines';
 export class QuotedetailsComponent implements OnInit {
   @Input() quote: Quotelines;
   @Output() isComplete = new EventEmitter<boolean>();
+ 
+  like=0;
+  upvote(){
+    this.like++;
+  }
+  Dislike=0;
+  downvote(){
+    this.Dislike++;
+  }
   quoteDelete(complete:boolean){
     this.isComplete.emit(complete);
   }

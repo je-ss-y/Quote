@@ -13,7 +13,7 @@
         </p> -->
         <div *ngFor='let quote of quotes;let i = index'>
             <li>{{quote.name}} published on {{quote.completeDate|date|uppercase}}</li>
-            <button (click)='toggleDetails(i)'>Toggle Details</button>
+            <button (click)='toggleDetails(i)'>Read more..</button>
             <app-quotedetails *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quotedetails>
          
           </div>
