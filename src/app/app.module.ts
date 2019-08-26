@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { QuoteparentComponent } from './quoteparent/quoteparent.component';
 import { QuotedetailsComponent } from './quotedetails/quotedetails.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 
 @NgModule({
@@ -21,7 +21,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule.forRoot(),
     FormsModule,
   ],
   providers: [],

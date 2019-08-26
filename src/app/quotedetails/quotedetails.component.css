@@ -1,0 +1,21 @@
+.button1{
+background-color:red;
+  border: none;
+  color: white;
+  position:relative;
+  padding:15px 32px;
+}
+.button2{
+    background-color: #4CAF50;
+      border: none;
+      color: white;
+      position:relative;
+      padding:15px 32px;
+    }
+    .button3{
+        background-color: #4CAF50;
+          border: none;
+          color: white;
+          position:relative;
+          padding:15px 32px;
+        }

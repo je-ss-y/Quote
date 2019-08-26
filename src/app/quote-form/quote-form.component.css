@@ -1,5 +1,12 @@
-.container-fluid{
+.frm{
     position:relative;
-    width:210px;
+    width:510px;
     top:10px;
+    background-color:transparent;
+    border-bottom: 1px solid white;
+    position:relative;
+    right:132px;
+    width:1012px;
+    height:200px;
+    top:50px;
 }
