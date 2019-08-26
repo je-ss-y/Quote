@@ -9,7 +9,7 @@ import { Quotelines } from '../quotelines';
 export class QuoteFormComponent implements OnInit {
   newQuote= new Quotelines (0,"","","",new Date());
   @Output() addQuote = new EventEmitter<Quotelines >();
-  submitGoal(){
+  submitForm(){
     this.addQuote.emit(this.newQuote);
       }
 

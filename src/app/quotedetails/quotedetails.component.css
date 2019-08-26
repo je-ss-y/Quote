@@ -1,9 +1,10 @@
 .button1{
-background-color:red;
+background-color:#ecc6c6;
   border: none;
   color: white;
   position:relative;
   padding:15px 32px;
+  border-radius:8px;
 }
 .button2{
     
@@ -11,11 +12,13 @@ background-color:red;
       color:black;
       position:relative;
       padding:15px 32px;
+      border-radius:8px;
     }
     .button3{
-        background-color: #4CAF50;
+        background-color:#f9ecec;
           border: none;
           color: white;
           position:relative;
           padding:15px 32px;
+          border-radius:8px;
         }
